@@ -3,6 +3,6 @@ module lk.ijse.culinaryacademy {
     requires javafx.fxml;
 
 
-    opens lk.ijse.culinaryacademy to javafx.fxml;
+    opens lk.ijse.culinaryacademy.controller to javafx.fxml;
     exports lk.ijse.culinaryacademy;
 }
