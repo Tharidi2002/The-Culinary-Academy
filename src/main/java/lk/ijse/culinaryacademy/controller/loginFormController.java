@@ -3,6 +3,7 @@ package lk.ijse.culinaryacademy.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -53,7 +54,16 @@ public class loginFormController {
     }
 
     @FXML
-    void btnSigninOnAction(ActionEvent event) {
+    void btnSigninOnAction(ActionEvent event) throws IOException {
+        AnchorPane rootNode = FXMLLoader.load(this.getClass().getResource("/view/dashboard-form.fxml"));
+        Scene scene = new Scene(rootNode);
+        Stage stage = (Stage) this.rootLogin.getScene().getWindow();
+        stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.setTitle("Dashboard Form");
+    }
+
+    private void checkCredential(String username, String password) {
 
     }
 
