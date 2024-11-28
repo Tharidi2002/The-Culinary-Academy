@@ -13,6 +13,9 @@ import javafx.scene.layout.AnchorPane;
 public class studentFormController {
 
     @FXML
+    private Button btnAddNewStudent;
+
+    @FXML
     private Button btnDelete;
 
     @FXML
@@ -53,6 +56,11 @@ public class studentFormController {
 
     @FXML
     private TextField txtregNo;
+
+    @FXML
+    void btnAddNewStudentOnAction(ActionEvent event) {
+
+    }
 
     @FXML
     void btnSaveOnAction(ActionEvent event) {
